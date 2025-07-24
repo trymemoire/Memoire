@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Order gifts</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #fdfdfd;
+    }
+    h1, h2 {
+      font-family: 'Playfair Display', serif;
+    }
+  </style>
+</head>
+<body class="text-gray-800">
+
+<!-- Header -->
+<section class="bg-black text-white py-12 px-6">
+  <div class="text-center max-w-3xl mx-auto">
+    <h1 class="text-4xl font-bold mb-3">CUSTOMISE YOUR GIFT</h1>
+    <p class="text-lg mb-6">Handcrafted vibes. Zero stress. 100% ‘Awwww’ guaranteed.</p>
+</div>
+</section>
+
+<!-- Product Section -->
+<section class="py-16 px-4 max-w-7xl mx-auto">
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+<!-- COMBO BOX: Birthday Box 1 -->
+<div class="bg-white rounded-xl shadow hover:shadow-lg transition p-4 text-center w-full max-w-sm mx-auto">
+  <div class="relative w-full h-64 overflow-hidden rounded-lg">
+    <div id="slider10" class="flex w-full h-full transition-transform duration-500 ease-in-out">
+      <img src="GB1.jpg" class="w-full h-full object-contain flex-shrink-0" />
+      <img src="GB1.jpg" class="w-full h-full object-contain flex-shrink-0" />
+    </div>
+    <button onclick="prevSlide(10)" class="absolute top-1/2 -translate-y-1/2 left-2 bg-black/30 text-white px-3 py-1 rounded-full">&#10094;</button>
+    <button onclick="nextSlide(10)" class="absolute top-1/2 -translate-y-1/2 right-2 bg-black/30 text-white px-3 py-1 rounded-full">&#10095;</button>
+    <div id="dots10" class="absolute bottom-2 left-1/2 transform -translate-x-1/2 flex space-x-2">
+      <button onclick="slideTo(0,10)" class="dot w-2 h-2 bg-black rounded-full opacity-70"></button>
+      <button onclick="slideTo(1,10)" class="dot w-2 h-2 bg-black rounded-full opacity-30"></button>
+    </div>
+  </div>
+  <h3 class="text-xl font-semibold mt-4">Birthday Hamper</h3>
+  <ul class="text-left text-sm text-gray-600 mt-3 space-y-1 px-2">
+    <li>🎞️ 10 Polaroids</li>
+    <li>🍫 1 Chocolate</li>
+    <li>💌 Customized Letter</li>
+  </ul>
+  <p class="text-md font-bold text-green-600 mt-2">₹169 + Chocolate Price</p>
+  <div class="mt-4">
+    <a href="https://www.instagram.com/trymemoire" target="_blank" class="bg-black text-white px-4 py-2 rounded-full hover:bg-gray-900">
+      Order on Insta ❤️
+    </a>
+  </div>
+</div>
+
+<!-- COMBO BOX: Birthday Box 2 -->
+<div class="bg-white rounded-xl shadow hover:shadow-lg transition p-4 text-center w-full max-w-sm mx-auto">
+  <div class="relative w-full h-64 overflow-hidden rounded-lg">
+    <div id="slider11" class="flex w-full h-full transition-transform duration-500 ease-in-out">
+      <img src="GB2.jpg" class="w-full h-full object-contain flex-shrink-0" />
+      <img src="GB2.jpg" class="w-full h-full object-contain flex-shrink-0" />
+    </div>
+    <button onclick="prevSlide(11)" class="absolute top-1/2 -translate-y-1/2 left-2 bg-black/30 text-white px-3 py-1 rounded-full">&#10094;</button>
+    <button onclick="nextSlide(11)" class="absolute top-1/2 -translate-y-1/2 right-2 bg-black/30 text-white px-3 py-1 rounded-full">&#10095;</button>
+    <div id="dots11" class="absolute bottom-2 left-1/2 transform -translate-x-1/2 flex space-x-2">
+      <button onclick="slideTo(0,11)" class="dot w-2 h-2 bg-black rounded-full opacity-70"></button>
+      <button onclick="slideTo(1,11)" class="dot w-2 h-2 bg-black rounded-full opacity-30"></button>
+    </div>
+  </div>
+  <h3 class="text-xl font-semibold mt-4">Birthday Hamper</h3>
+  <ul class="text-left text-sm text-gray-600 mt-3 space-y-1 px-2">
+    <li>🧲 5 Customized Magnets</li>
+    <li>🍫 1 Chocolate</li>
+    <li>💌 Customized Letter</li>
+  </ul>
+  <p class="text-md font-bold text-green-600 mt-2">₹499 + Chocolate Price</p>
+  <div class="mt-4">
+    <a href="https://www.instagram.com/trymemoire" target="_blank" class="bg-black text-white px-4 py-2 rounded-full hover:bg-gray-900">
+      Order on Insta ❤️
+    </a>
+  </div>
+</div>
+
+<!-- COMBO BOX: Birthday Box 3 -->
+<div class="bg-white rounded-xl shadow hover:shadow-lg transition p-4 text-center w-full max-w-sm mx-auto">
+  <div class="relative w-full h-64 overflow-hidden rounded-lg">
+    <div id="slider12" class="flex w-full h-full transition-transform duration-500 ease-in-out">
+      <img src="GB3.jpg" class="w-full h-full object-contain flex-shrink-0" />
+      <img src="GB3.jpg" class="w-full h-full object-contain flex-shrink-0" />
+    </div>
+    <button onclick="prevSlide(12)" class="absolute top-1/2 -translate-y-1/2 left-2 bg-black/30 text-white px-3 py-1 rounded-full">&#10094;</button>
+    <button onclick="nextSlide(12)" class="absolute top-1/2 -translate-y-1/2 right-2 bg-black/30 text-white px-3 py-1 rounded-full">&#10095;</button>
+    <div id="dots12" class="absolute bottom-2 left-1/2 transform -translate-x-1/2 flex space-x-2">
+      <button onclick="slideTo(0,12)" class="dot w-2 h-2 bg-black rounded-full opacity-70"></button>
+      <button onclick="slideTo(1,12)" class="dot w-2 h-2 bg-black rounded-full opacity-30"></button>
+    </div>
+  </div>
+  <h3 class="text-xl font-semibold mt-4">Birthday Hamper</h3>
+  <ul class="text-left text-sm text-gray-600 mt-3 space-y-1 px-2">
+    <li>📸 1 Photo Strip</li>
+    <li>🧲 3 Magnets</li>
+    <li>🍫 1 Chocolate</li>
+    <li>💌 Customized Message</li>
+  </ul>
+  <p class="text-md font-bold text-green-600 mt-2">₹399 + Chocolate Price</p>
+  <div class="mt-4">
+    <a href="https://www.instagram.com/trymemoire" target="_blank" class="bg-black text-white px-4 py-2 rounded-full hover:bg-gray-900">
+      Order on Insta ❤️
+    </a>
+  </div>
+</div>
+
+<!-- COMBO BOX: Rakhi Box (459) -->
+<div class="bg-white rounded-xl shadow hover:shadow-lg transition p-4 text-center w-full max-w-sm mx-auto">
+  <div class="relative w-full h-64 overflow-hidden rounded-lg">
+    <div id="slider14" class="flex w-full h-full transition-transform duration-500 ease-in-out">
+      <img src="rakhi01.jpg" class="w-full h-full object-contain flex-shrink-0" />
+      <img src="rakhi01.jpg" class="w-full h-full object-contain flex-shrink-0" />
+    </div>
+    <button onclick="prevSlide(14)" class="absolute top-1/2 -translate-y-1/2 left-2 bg-black/30 text-white px-3 py-1 rounded-full">&#10094;</button>
+    <button onclick="nextSlide(14)" class="absolute top-1/2 -translate-y-1/2 right-2 bg-black/30 text-white px-3 py-1 rounded-full">&#10095;</button>
+    <div id="dots14" class="absolute bottom-2 left-1/2 transform -translate-x-1/2 flex space-x-2">
+      <button onclick="slideTo(0,14)" class="dot w-2 h-2 bg-black rounded-full opacity-70"></button>
+      <button onclick="slideTo(1,14)" class="dot w-2 h-2 bg-black rounded-full opacity-30"></button>
+    </div>
+  </div>
+  <h3 class="text-xl font-semibold mt-4">Rakhi Box</h3>
+  <ul class="text-left text-sm text-gray-600 mt-3 space-y-1 px-2">
+    <li>🧵 1 Rakhi</li>
+    <li>🧲 5 Customized Magnets</li>
+    <li>💌 Customized Message</li>
+  </ul>
+  <p class="text-md font-bold text-green-600 mt-2">₹459</p>
+  <div class="mt-4">
+    <a href="https://www.instagram.com/trymemoire" target="_blank" class="bg-black text-white px-4 py-2 rounded-full hover:bg-gray-900">
+      Order on Insta ❤️
+    </a>
+  </div>
+</div>
+
+<!-- COMBO BOX: Rakhi Box (1799) -->
+<div class="bg-white rounded-xl shadow hover:shadow-lg transition p-4 text-center w-full max-w-sm mx-auto">
+  <div class="relative w-full h-64 overflow-hidden rounded-lg">
+    <div id="slider15" class="flex w-full h-full transition-transform duration-500 ease-in-out">
+      <img src="rakhi1.jpg" class="w-full h-full object-contain flex-shrink-0" />
+      <img src="rakhi1.jpg" class="w-full h-full object-contain flex-shrink-0" />
+    </div>
+    <button onclick="prevSlide(15)" class="absolute top-1/2 -translate-y-1/2 left-2 bg-black/30 text-white px-3 py-1 rounded-full">&#10094;</button>
+    <button onclick="nextSlide(15)" class="absolute top-1/2 -translate-y-1/2 right-2 bg-black/30 text-white px-3 py-1 rounded-full">&#10095;</button>
+    <div id="dots15" class="absolute bottom-2 left-1/2 transform -translate-x-1/2 flex space-x-2">
+      <button onclick="slideTo(0,15)" class="dot w-2 h-2 bg-black rounded-full opacity-70"></button>
+      <button onclick="slideTo(1,15)" class="dot w-2 h-2 bg-black rounded-full opacity-30"></button>
+    </div>
+  </div>
+  <h3 class="text-xl font-semibold mt-4">Rakhi Box (Premium)</h3>
+  <ul class="text-left text-sm text-gray-600 mt-3 space-y-1 px-2">
+    <li>🧵 1 Rakhi</li>
+    <li>🪄 25 Memory Tokens</li>
+    <li>🍫 1 Chocolate (at MRP)</li>
+    <li>💌 Customized Message</li>
+  </ul>
+  <p class="text-md font-bold text-green-600 mt-2">₹1799 + Chocolate Price</p>
+  <div class="mt-4">
+    <a href="https://www.instagram.com/trymemoire" target="_blank" class="bg-black text-white px-4 py-2 rounded-full hover:bg-gray-900">
+      Order on Insta ❤️
+    </a>
+  </div>
+</div>
+
+    
+ </div>
+</section>
+
+<!-- Script for Slider -->
+<script>
+  const totalSlides = 4;
+const sliderStates = Array.from({ length: 15 }, () => ({ current: 0 }));
+
+  function slideTo(index, id) {
+    const slider = document.getElementById(`slider${id}`);
+    const dots = document.querySelectorAll(`#dots${id} .dot`);
+    slider.style.transform = `translateX(-${index * 100}%)`;
+    sliderStates[id - 1].current = index;
+    dots.forEach((dot, i) => {
+      dot.classList.remove('opacity-70');
+      dot.classList.add('opacity-30');
+      if (i === index) {
+        dot.classList.remove('opacity-30');
+        dot.classList.add('opacity-70');
+      }
+    });
+  }
+
+  function nextSlide(id) {
+    const state = sliderStates[id - 1];
+    const next = (state.current + 1) % totalSlides;
+    slideTo(next, id);
+  }
+
+  function prevSlide(id) {
+    const state = sliderStates[id - 1];
+    const prev = (state.current - 1 + totalSlides) % totalSlides;
+    slideTo(prev, id);
+  }
+
+  window.onload = () => {
+    for (let i = 1; i <= 9; i++) {
+      slideTo(0, i);
+    }
+  };
+  // Close other dropdowns when clicking elsewhere
+  window.addEventListener('click', function (e) {
+    document.querySelectorAll('.dropdown-options').forEach(drop => {
+      if (!drop.parentElement.contains(e.target)) {
+        drop.classList.add('hidden');
+        drop.classList.remove('block');
+      }
+    });
+  });
+
+  // Toggle dropdown on button click
+  function toggleDropdown(button) {
+    const dropdown = button.nextElementSibling;
+    dropdown.classList.toggle('hidden');
+    dropdown.classList.toggle('block');
+  }
+
+</script>
+<footer>
+  <section class="bg-black text-white py-12 px-6">
+  <div class="text-center max-w-3xl mx-auto">
+    <a href="index.html" class="inline-block bg-white text-black px-6 py-2 rounded-full hover:bg-gray-200 transition">Back to Home</a>
+  </div>
+</section>
+</footer>
+
+</body>
+</html>
